@@ -6,17 +6,9 @@ permalink: /writeups/
 
 A collection of my writeups organized by CTF competition.
 {% assign ctfs = site.writeups | group_by: "ctf" | sort: "name" %}
-
+<ul>
 {% for ctf_group in ctfs %}
   {% assign ctf_name = ctf_group.name %}
-  {% assign challenges = ctf_group.items | sort: "date" | reverse %}
-
-  <h2>{{ ctf_name }}</h2>
-
-  <ul>
-  {% for challenge in challenges %}
-    <li><a href="{{ challenge.url }}">{{ challenge.title }}</a></li>
-  {% endfor %}
-  </ul>
-
+  <li><a href="/writeups/{{ ctf_name | slugify }}/">{{ ctf_name }}</a></li>
 {% endfor %}
+</ul>
