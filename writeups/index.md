@@ -13,4 +13,10 @@ A collection of my writeups organized by CTF competition.
 
   <h2>{{ ctf_name }}</h2>
 
+  <ul>
+  {% for challenge in challenges %}
+    <li><a href="{{ challenge.url }}">{{ challenge.title }}</a></li>
+  {% endfor %}
+  </ul>
+
 {% endfor %}
