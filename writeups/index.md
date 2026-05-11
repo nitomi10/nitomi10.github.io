@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Writeups
+title: CTF Writeups
 permalink: /writeups/
 ---
-
-# CTF Writeups
 
 A collection of my writeups organized by CTF competition.
 {% assign ctfs = site.writeups | group_by: "ctf" | sort: "name" %}
