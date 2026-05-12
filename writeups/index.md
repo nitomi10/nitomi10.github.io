@@ -1,3 +1,4 @@
+
 ---
 layout: page
 title: CTF Writeups
@@ -9,6 +10,6 @@ A collection of my writeups organized by CTF competition.
 <ul>
 {% for ctf_group in ctfs %}
   {% assign ctf_name = ctf_group.name %}
-  <li><a href="/writeups/{{ ctf_name | slugify }}/">{{ ctf_name }}</a></li>
+  <li><a href="/writeups/{{ ctf_name | slugify | replace: '-', '' }}/">{{ ctf_name }}</a></li>
 {% endfor %}
 </ul>
