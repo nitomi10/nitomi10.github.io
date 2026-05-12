@@ -24,7 +24,7 @@ Simply patching that part of the memory to be an empty string yields this result
 
 With a bit of trial and error I was able to find where the boxes position was being set.
 
-![Finding box position code](/writeups/hcsc26/images/box.png)
+![Finding box position code](/writeups/hcsc26/images/Untitled.png)
 
 After patching those values, I got this result:
 
